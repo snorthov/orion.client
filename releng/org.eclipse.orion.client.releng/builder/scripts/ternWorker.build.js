@@ -16,7 +16,7 @@
         CompilerOptions: {
             // Need this check to avoid TypeError when eval'ing this buildfile without the Closure jars loaded, or from Node.
             languageIn: (typeof Packages === "object" && typeof Packages.com.google.javascript.jscomp.CompilerOptions.LanguageMode.valueOf === "function")
-                ? Packages.com.google.javascript.jscomp.CompilerOptions.LanguageMode.valueOf(Packages.com.google.javascript.jscomp.CompilerOptions.LanguageMode, "ECMASCRIPT5")
+                ? Packages.com.google.javascript.jscomp.CompilerOptions.LanguageMode.valueOf("ECMASCRIPT5")
                 : "ECMASCRIPT5"
         },
         CompilationLevel: 'SIMPLE_OPTIMIZATIONS',
