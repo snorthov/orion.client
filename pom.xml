@@ -61,7 +61,7 @@
 		<tycho-extras-version>0.22.0</tycho-extras-version>
 		<tycho.scmUrl>scm:git:http://git.eclipse.org/gitroot/orion/org.eclipse.orion.client.git</tycho.scmUrl>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java-version>1.7</java-version>
+		<java-version>1.8</java-version>
 		<requirejsHome>${basedir}/target/requirejs/</requirejsHome>
 		<jsdocHome>${basedir}/target/jsdoc</jsdocHome>
 		<antrun-version>1.7</antrun-version>
@@ -83,11 +83,6 @@
 	</distributionManagement>
 
 	<dependencies>
-	    <dependency>
-	        <groupId>org.mozilla</groupId>
-	        <artifactId>rhino</artifactId>
-	        <version>1.7R4</version>
-	    </dependency>
 	    <dependency>
 	        <groupId>com.google.javascript</groupId>
 	        <artifactId>closure-compiler</artifactId>
