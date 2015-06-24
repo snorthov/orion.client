@@ -26,7 +26,8 @@
 
     <target name="download3rdPartyLibs">
         <mkdir dir="${requirejsHome}" />
-        <get src="http://requirejs.org/docs/release/2.1.18/r.js"
+		<!-- http://requirejs.org/docs/release/2.1.18/r.js -->
+		<get src="https://mamacdon.github.io/requirejs/r.js"
              dest="${requirejsHome}/r.js"
              usetimestamp="true"
              maxtime="30" />
