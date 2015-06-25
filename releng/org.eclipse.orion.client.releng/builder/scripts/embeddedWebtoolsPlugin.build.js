@@ -13,13 +13,6 @@
  
 ({
     baseUrl: '.',
-	closure: {
-		CompilerOptions: {
-			languageIn: Packages.com.google.javascript.jscomp.CompilerOptions.LanguageMode.valueOf(Packages.com.google.javascript.jscomp.CompilerOptions.LanguageMode, "ECMASCRIPT5")
-		},
-		CompilationLevel: 'SIMPLE_OPTIMIZATIONS',
-		loggingLevel: 'WARNING'
-	},
 	paths: {
         almond: 'requirejs/almond',
 		text: 'requirejs/text',
@@ -28,8 +21,7 @@
 		csslint: 'csslint/csslint',
 		'orion/bootstrap': 'embeddedEditor/builder/buildFrom/bootstrap'
 	},
-	packages: [
-	],
+	packages: [],
 	name: "almond",
 	//locales: ["ja", "zh", "zh-tw", "fr", "de", "it", "es", "pt-br"],						
 	include: "webtools/plugins/webToolsPlugin",
