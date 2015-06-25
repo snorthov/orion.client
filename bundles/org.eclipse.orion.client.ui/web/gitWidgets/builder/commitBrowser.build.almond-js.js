@@ -32,9 +32,6 @@
 	locales: ["ja", "zh", "zh-tw", "fr", "de", "it", "es", "pt-br"],						
 	include: "gitWidgets/builder/commitBrowser",
 	preserveLicenseComments: false,
-	uglify: {
-		ascii_only: true
-	},
 	wrap: {
 		start: "/* orion commitBrowser */ ", //start cannot be empty
 		end: "\

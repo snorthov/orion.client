@@ -32,9 +32,6 @@
 	//locales: ["ja", "zh", "zh-tw", "fr", "de", "it", "es", "pt-br"],						
 	include: "plugins/embeddedToolingPlugin",
 	preserveLicenseComments: false,
-	uglify: {
-		ascii_only: true
-	},
 	wrap: {
 		start: "\
 			(function (root, factory) {\

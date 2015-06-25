@@ -27,9 +27,6 @@
  	},
 	name: "compare/builder/compare",
 	preserveLicenseComments: false,
-	uglify: {
-		ascii_only: true
-	},
 	wrap: {
 		start: "/* orion compare */ ", //start cannot be empty
 		end: " define(['compare/builder/compare'], function(compare) {return compare;});"

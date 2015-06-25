@@ -27,9 +27,6 @@
 	include: ["webtools/cssContentAssist"],
 	preserveLicenseComments: false,
 	generateSourceMaps: true,
-	uglify: {
-		ascii_only: true
-	},
 	wrap: {
 		start: "\
 			(function (root, factory) {\

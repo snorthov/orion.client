@@ -40,9 +40,6 @@
 	//locales: ["ja", "zh", "zh-tw", "fr", "de", "it", "es", "pt-br"],						
 	include: "embeddedEditor/builder/embeddedEditor",
 	preserveLicenseComments: false,
-	uglify: {
-		ascii_only: true
-	},
 	wrap: {
 		start: "\
 			(function (root, factory) {\

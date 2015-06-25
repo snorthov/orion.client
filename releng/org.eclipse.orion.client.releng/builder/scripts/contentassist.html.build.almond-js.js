@@ -27,9 +27,6 @@
 	include: ["webtools/htmlContentAssist"],
 	preserveLicenseComments: false,
 	generateSourceMaps: true,
-	uglify: {
-		ascii_only: true
-	},
 	// https://github.com/jrburke/almond#exporting-a-public-api
 	wrap: {
 		start: "\

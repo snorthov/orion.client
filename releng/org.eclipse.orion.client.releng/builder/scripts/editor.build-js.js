@@ -26,9 +26,6 @@
 	},
 	name: "orion/editor/edit",
 	preserveLicenseComments: false,
-	uglify: {
-		ascii_only: true
-	},
 	wrap: {
 		start: "/* orion editor */ ", //start cannot be empty
 		end: " define(['orion/editor/edit'], function(edit) {return edit;});"

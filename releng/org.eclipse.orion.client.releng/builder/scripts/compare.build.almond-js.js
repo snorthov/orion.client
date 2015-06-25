@@ -30,9 +30,6 @@
 	locales: ["ja", "zh", "zh-tw", "fr", "de", "it", "es", "pt-br"],						
 	include: "compare/builder/compare",
 	preserveLicenseComments: false,
-	uglify: {
-		ascii_only: true
-	},
 	wrap: {
 		start: "/* orion compare */ ", //start cannot be empty
 		end: "\
