@@ -1,4 +1,4 @@
-<project name="WebIDERequireJS customTargets overrides" >
+<project name="WebIDERequireJS customTargets overrides" xmlns:ac="antlib:net.sf.antcontrib">
 	<!--
 	Required properties
 	======================================================================
@@ -100,12 +100,12 @@
 				<arg value="-e" />
 				<arg value="''" />
 			</exec>
-			<if>
+			<ac:if>
 				<equals arg1="${node.exit}" arg2="0" />
-				<then>
+				<ac:then>
 					<property name="node.ok" value="true" />
-				</then>
-			</if>
+				</ac:then>
+			</ac:if>
 		</sequential>
 	</macrodef>
 
@@ -115,16 +115,16 @@
 		<sequential>
 			<property name="requirejs" location="${requirejsHome}/r.js" />
 			<checkNode />
-			<if>
+			<ac:if>
 				<isset property="node.ok" />
-				<then>
+				<ac:then>
 					<echo message="Running ${node}..." />
 					<exec executable="${node}" dir="${staging}" failonerror="true">
 						<arg value="${requirejs}"/>
 						<args />
 					</exec>
-				</then>
-				<else>
+				</ac:then>
+				<ac:else>
 					<echo message="Running Nashorn..." />
 					<exec executable="jjs" dir="${staging}" failonerror="true">
 						<arg value="-scripting" />
@@ -132,8 +132,8 @@
 						<arg value="--" />
 						<args />
 					</exec>
-				</else>
-			</if>
+				</ac:else>
+			</ac:if>
 		</sequential>
 	</macrodef>
 
